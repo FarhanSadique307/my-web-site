@@ -1,0 +1,19 @@
+.container{
+    background-color: rgb(220, 230, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inpt{
+  
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+h1{
+    text-align: center;
+}
