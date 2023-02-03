@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
 }
+
 .inpt{
   
     border: 2px solid black;
@@ -15,5 +16,8 @@
     display: flex;
 }
 h1{
+    text-align: center;
+}
+h3{
     text-align: center;
 }
