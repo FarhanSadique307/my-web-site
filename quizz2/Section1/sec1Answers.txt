@@ -1,1 +1,33 @@
-answers
+Q1- Javascript is an Scripting language?   (d) None of these
+
+Q2- Which of the following keywords is used to define a variable in Javascript? VAR LET CONST 
+
+Q3- How the objects are passed in JavaScript? (B) By reference
+
+Q4- Which of the following methods is used to access HTML elements using Javascript? getElementById() GetElementByClass()
+
+
+Q5-  How can a datatype be declared to be a constant type? const keyword is used 
+
+Q6- What will be the output of the following code snippet?
+var a = "Scaler";
+var result = a.substring(2, 4);
+document.write(result);
+
+The output of this code is  = (b) ale
+
+Q7- What will be the output of the following code snippet?
+var x=12;
+var y=8;
+var res=eval("x+y");
+document.write(res);
+The output of this code is  = (a) 20
+
+Q8- AJAX is about updating parts of a web page without reloading the full-page. ( parts of a web page)
+ 
+Q9- In Github After you add a file, it becomes   (d) Commited )
+
+The git add command adds a change in the working directory to the staging area after we will commit the file.
+
+Q10-. What command lets you create a connection between a local and remote repository? (Git remote add origin )  
+
