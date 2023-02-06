@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="date" id="d">
+    <input type="button" value="submit" onclick="checkDob()"> -->
+
+</body>
+<script>
+   function calAge(dob) { 
+    var month = Date.now() - dob.getTime();
+    var age = new Date(month); 
+    var year = Math.abs(age.getUTCFullYear() - 1970);
+    var month = year * 12;
+    var days = year*365;
+    document.write ("AGE IN DAYS= " + days + "<br>")
+    document.write ("AGE IN MONTHS= " + month + "<br>")
+    return year;
+
+    
+}
+document.write ("AGE IN YEARS = " + (calAge(new Date(1998, 02, 05))));
+
+
+  
+
+</script>
+</html>

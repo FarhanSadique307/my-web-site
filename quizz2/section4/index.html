@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i=0;
+        var j=0;
+        var k=0;
+        var mat1 = [
+            [1,2,3],
+            [3,5,3],
+       
+
+        ];
+        var mat2 = [
+            [2,3,2],
+            [3,5,1]
+          
+        ];
+        var mat3 = [
+            [0,0,0],
+            [0,0,0]
+        ];
+        document.write("MATRIX-1 : <br> ");
+        for (i=0; i<2; i++){
+            for (j=0; j<3; j++) {
+                document.write(mat1[i][j] + " &nbsp");
+            }
+            document.write("<br>")
+        }
+        document.write("MATRIX-2 : <br> ");
+        for (i=0; i<2; i++){
+            for (j=0; j<3; j++) {
+                document.write(mat2[i][j] + " &nbsp");
+            }
+            document.write("<br>")
+        }
+      
+        for (i=0; i<2; i++){
+            for (j=0; j<3; j++) {
+                for (k=0 ; k<2; k++){
+                    mat3[i][j]= mat3[i][j]+ mat1[i][k] * mat2[k][j];
+                }
+            }
+
+        }
+
+        document.write("Multiplication of two matrix is = MATRIX-3 : <br> ");
+        for (i=0; i<2; i++){
+            for (j=0; j<3; j++) {
+                document.write(mat3[i][j] + " &nbsp");
+            }
+            document.write("<br>")
+        }
+
+        
+    </script>
+</body>
+</html>
