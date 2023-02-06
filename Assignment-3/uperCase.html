@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;"> Write a JavaScript program to test the first character of a string is uppercase or not.</h1>
+    <script>
+     
+    
+      function checkTest(str)
+{
+   regx = /^[A-Z]/;
+   if (regx.test(str))
+    {
+      document.write (" first character of String is uppercase" + "<br>");
+    } 
+    else
+    {
+        document.write("first character of String is not uppercase");
+    }
+}
+checkTest('Farhan');
+checkTest('farhan');
+
+    </script>
+</body>
+</html>

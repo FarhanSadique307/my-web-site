@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset=utf-8 />
+  <title>Count number of words in a string</title>
+  <style >
+  body {
+    margin-top: 80px;}
+  </style> 
+</head>
+  <body>
+  <textarea id="InputText" cols="50" rows="5">  Enter Text To Write </textarea>
+  <br>
+  <input type="button" name="Convert" value="No of Words" onClick="countWords();">
+  <input id = "noofwords" type="text" value="" size="6"> 
+
+  <script>
+    function countWords()
+{
+str1= document.getElementById("InputText").value;
+str1 = str1.replace(/(^\s*)|(\s*$)/gi,"");
+str1 = str1.replace(/[ ]{2,}/gi," "); 
+str1 = str1.replace(/\n /,"\n");
+document.getElementById("noofwords").value = str1.split(' ').length;
+}
+
+  </script>
+  </body>
+  </html>
+  
