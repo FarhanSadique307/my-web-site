@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>question no 2</h1>
+
+    <script>
+        class Player {
+            static totalRuns = 0;
+            constructor(PlayerID, PlayerName, Runs, PlayerDateofBirth, PlayerShirtNumber) {
+                this.PlayerID = PlayerID;
+                this.PlayerName = PlayerName;
+                this.Runs = Runs;
+                this.PlayerDateofBirth = PlayerDateofBirth;
+                this.PlayerShirtNumber = PlayerShirtNumber;
+                Player.totalRuns += Runs;
+            }
+            DisplayInfo() {
+                console.log(`Player ID: ${this.PlayerID}\nPlayer Name: ${this.PlayerName}\nRuns: ${this.Runs}\nDate of Birth: ${this.PlayerDateofBirth}\nShirt Number: ${this.PlayerShirtNumber}`)
+            };
+            GetRuns() {
+                return this.Runs;
+            }
+            AddRuns(runs) {
+                this.Runs += runs;
+                Player.totalRuns += runs;
+            }
+            totalScore() {
+                console.log(Player.totalRuns)
+            }
+
+        }
+        const Player1 = new Player(1, "FARHAN", 500, "02-05-1998", 11)
+        Player1.DisplayInfo();
+        console.log(Player1.GetRuns());
+        Player1.AddRuns(60);
+        Player1.AddRuns(60);
+        Player1.AddRuns(60);
+        Player1.AddRuns(60);
+        console.log("Player 1 Runs after adding more runs " + Player1.GetRuns());
+        Player1.totalScore();
+    </script>
+</body>
+
+</html>
